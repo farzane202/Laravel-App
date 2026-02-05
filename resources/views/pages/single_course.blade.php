@@ -1,0 +1,232 @@
+{{--<!DOCTYPE html>--}}
+{{--<html lang="en">--}}
+{{--<head>--}}
+{{--    <meta charset="UTF-8">--}}
+{{--    <title>Title</title>--}}
+{{--    <link rel="preconnect" href="https://fonts.googleapis.com">--}}
+{{--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>--}}
+{{--    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">--}}
+{{--</head>--}}
+{{--<body>--}}
+@extends('index')
+@section('content')
+<main id="main" style="height: 2000px;margin-top: 15px;">
+    <div class="right">
+        <div class="specifications">
+            <p class="title"> specifications of this course </p>
+            <hr/>
+            <ul>
+                <li> <img src="img/book24.png"> Number of videos :   <span> 5 </span>  </li>
+                <li> <img src="img/clock24.png">  Course time :   <span> 5 hours </span>  </li>
+                <li> <img src="img/level24.png">  Course level :   <span> intermediate </span>  </li>
+                <li> <img src="img/earth24.png">  Course language :   <span> english </span>  </li>
+            </ul>
+            <hr/>
+            <div class="teachers">
+                <img src="img/user48.png">
+                <p style="color:#3e3e40"> farzaneh </p>
+                <p> Web designer </p>
+                <a class="follow"> follow </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="left">
+        <p class="title"> WebDesign Course </p>
+        <p class="introduction">
+            web design involves creating the visual layout and aesthetics of a website, focusing on user experience, graphics, and overall look. Front-end development, on the other hand, involves implementing the design into a functional website using coding languages like HTML, CSS, and JavaScript
+        </p>
+        <div class="video-player">
+            <video controls crossorigin="anonymous">
+                <source src="video/webdesign.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="description">
+            <p class="title"> Description of this course </p>
+            <hr/>
+            <p>
+                Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design (UI design); authoring, including standardised code and proprietary software; user experience design (UX design); and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all.[1] The term "web design" is normally used to describe the design process relating to the front-end (client side) design of a website including writing markup. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and be up to date with web accessibility guidelines.
+            </p>
+            <p style="color: #007bff"> After pass this course you can learn these courses too : </p>
+            <ul class="list">
+                <li><img src="img/check24.png"> <a>laravel framework course</a> </li>
+                <li><img src="img/check24.png"> <a>React framework course</a> </li>
+                <li><img src="img/check24.png"> <a>Asp.net core course</a> </li>
+                <li><img src="img/check24.png">  <a> PHP course</a> </li>
+                <li><img src="img/check24.png">  <a>Javascript course</a> </li>
+            </ul>
+            <p>Web designers use a variety of different tools depending on what part of the production process they are involved in. These tools are updated over time by newer standards and software but the principles behind them remain the same.</p>
+        </div>
+        <div class="sessions">
+            <p class="title"> Sessions of this course </p>
+            <hr/>
+            <div class="session">
+                <img src="img/play32.png"> <p> course introduction (<span> 60 minutes </span>) </p>
+
+                <a class="play"> play </a>
+            </div>
+            <div class="session">
+                <img src="img/play32.png"> <p> what is HTML ? (<span> 55 minutes </span>) </p>
+
+                <a class="play"> play </a>
+            </div>
+            <div class="session">
+                <img src="img/play32.png"> <p> what is CSS ? (<span> 45 minutes </span>) </p>
+
+                <a class="play"> play </a>
+            </div>
+            <div class="session">
+                <img src="img/play32.png"> <p> Jquary (<span> 60 minutes </span>) </p>
+
+                <a class="play"> play </a>
+            </div>
+        </div>
+        <div class="questions">
+            <p class="title" style="color: #ff3fd6"> Diffrent questions : </p>
+            <hr/>
+            <p><a> Where should i start ?  </a></p>
+            <p><a> How can i become good programmer ?  </a></p>
+            <p><a> where can i ask my questions ? </a></p>
+        </div>
+    </div>
+</main>
+@endsection
+
+<style>
+    #main{
+        padding: 10px;
+    }
+    .right{
+        width: 450px;
+        float:right;
+        font-family: 'Nunito', sans-serif;
+    }
+    .left{
+        width: 849px;
+        float: left;
+        font-family: 'Nunito', sans-serif;
+    }
+    .video-player{
+        padding-left: 44px;
+    }
+    .video-player video{
+        width: 781px;
+        height: 495px;
+    }
+    .description{
+        width: 809px;
+        border: 1px solid #ccc;
+        padding: 17px;
+        margin-top: 30px;
+    }
+    .description p{
+        color:#444444;
+    }
+    .description .list{
+        list-style-type: none;
+        padding-left: 11px;
+    }
+    .description .list li{
+        position: relative;
+    }
+    .description .list img{
+        width: 24px;
+        height: 24px;
+        position: relative;
+        top: 5px;
+        right: 2px;
+    }
+    .description .list a{
+        cursor: pointer;
+    }
+    .sessions{
+        width: 809px;
+        border: 1px solid #ccc;
+        padding: 17px;
+        margin-top: 30px;
+    }
+    .session{position: relative;padding-left: 18px;}
+    .session p{
+        width: 630px;
+        display: inline-block;
+    }
+    .session p span{
+        color: #0a966c;
+    }
+    .session img{
+        width: 32px;
+        height: 32px;
+        position: relative;
+        top: 10px;
+        right: 5px;
+    }
+    .play{
+        display: inline-block;
+        width: 64px;
+        height: 33px;
+        background-color: #04cd67;
+        color: white;
+        text-align: center;
+        line-height: 28px;
+        border-radius: 5px;
+    }
+    .questions{
+        width: 809px;
+        border: 1px solid #ccc;
+        padding: 17px;
+        margin-top: 30px;
+    }
+    .questions p{
+        margin-left: 15px;
+    }
+    .specifications{
+        width: 350px;
+        border: 1px solid #ccc;
+        padding: 17px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .right .specifications ul{
+        list-style-type: none;
+        padding-left: 5px;
+    }
+    .right .specifications ul li{
+        font-size: 11pt;
+        color:#3e3e40;
+        position: relative;
+    }
+    .right .specifications ul li img{
+        width: 24px;
+        height: 24px;
+        position: relative;
+        top:4px;
+        right: 3px;
+    }
+    .right .specifications ul li span{
+        float: right;
+        color:red;
+    }
+    .right .teachers p{
+        margin: 5px;
+        color:#00a5bb;
+    }
+    .teachers{
+        position: relative;
+    }
+    .follow{
+        width: 72px;
+        height: 32px;
+        display: inline-block;
+        border-radius: 5px;
+        background-color: #00a5bb;
+        color:white;
+        font-size: 10.5pt;
+        text-align: center;
+        line-height: 27px;
+        float: right;
+        position: relative;
+        top: -39px;
+    }
+</style>
+
+
